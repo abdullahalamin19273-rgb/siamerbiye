@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>সিয়াম উল্লাহ ও মিসেস উল্লাহ - শুভ বিবাহের নিমন্ত্রণ | Wedding Invitation</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Bengali (Galada, Hind Siliguri, Noto Serif Bengali), English (Plus Jakarta Sans) & Arabic (Amiri) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Galada&family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'galada': ['Galada', 'cursive'],
+                        'hind': ['Hind Siliguri', 'Plus Jakarta Sans', 'sans-serif'],
+                        'serif-bn': ['Noto Serif Bengali', 'serif'],
+                        'arabic': ['Amiri', 'serif'],
+                    },
+                    colors: {
+                        royalMaroon: '#8B1538',
+                        festiveCrimson: '#C81D3B',
+                        marigoldGold: '#F59E0B',
+                        turmericYellow: '#FBBF24',
+                        emeraldDeep: '#0D5C46',
+                        turquoiseAccent: '#0D9488',
+                        ivoryCream: '#FFFDF7',
+                        nightRoyal: '#0F172A'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Hind Siliguri', 'Plus Jakarta Sans', sans-serif;
+            background-color: #FDF8F2;
+            overflow-x: hidden;
+        }
+
+        /* Traditional Bengali Folk-Art Decorative Border */
+        .folk-royal-frame {
+            background: #FFFDF7;
+            border: 8px solid transparent;
+            border-image: repeating-linear-gradient(
+                45deg,
+                #8B1538 0px,
+                #8B1538 14px,
+                #F59E0B 14px,
+                #F59E0B 28px,
+                #0D5C46 28px,
+                #0D5C46 42px,
+                #0D9488 42px,
+                #0D9488 56px
+            ) 12;
+            box-shadow: 0 22px 45px -12px rgba(139, 21, 56, 0.22);
+        }
+
+        /* Scalloped Arch Card Border */
+        .scalloped-card {
+            background: #FFFDF7;
+            border: 3px solid #8B1538;
+            box-shadow: 0 12px 30px -8px rgba(139, 21, 56, 0.15);
+            position: relative;
+        }
+        .scalloped-card::after {
+            content: "";
+            position: absolute;
+            inset: 5px;
+            border: 1.5px dashed #F59E0B;
+            border-radius: inherit;
+            pointer-events: none;
+        }
+
+        /* Festive Road for Wedding Car */
+        .wedding-road {
+            background: linear-gradient(180deg, #2D333B 0%, #1F242B 100%);
+            border-top: 5px solid #F59E0B;
+            border-bottom: 5px solid #0D5C46;
+            position: relative;
+            height: 92px;
+            box-shadow: inset 0 6px 14px rgba(0,0,0,0.4);
+        }
+        .wedding-road::after {
+            content: "";
+            position: absolute;
+            top: 62%;
+            left: 0;
+            right: 0;
+            height: 4px;
+            transform: translateY(-50%);
+            background-image: linear-gradient(to right, #FDE68A 55%, transparent 55%);
+            background-size: 40px 4px;
+        }
+
+        /* Gentle Palki Sway & Car Engine Hum Animations */
+        @keyframes palkiSway {
+            0%, 100% { transform: rotate(-1.5deg) translateY(0px); }
+            50% { transform: rotate(1.5deg) translateY(-4px); }
+        }
+        .animate-palki {
+            animation: palkiSway 2.4s ease-in-out infinite;
+            transform-origin: top center;
+        }
+
+        @keyframes carHum {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-2px); }
+        }
+        .animate-car {
+            animation: carHum 0.45s ease-in-out infinite;
+        }
+
+        @keyframes wheelSpin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .wheel-spin {
+            transform-origin: center;
+            animation: wheelSpin 2.5s linear infinite;
+        }
+
+        /* Floating Marigold & Rose Petals */
+        @keyframes floatPetal {
+            0% { transform: translateY(-10px) rotate(0deg); opacity: 0; }
+            20% { opacity: 0.9; }
+            80% { opacity: 0.9; }
+            100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+        }
+        .petal {
+            position: fixed;
+            top: -20px;
+            z-index: 40;
+            pointer-events: none;
+            animation: floatPetal linear infinite;
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 0.45; transform: scale(0.95); }
+            50% { opacity: 1; transform: scale(1.18); }
+        }
+        .fairy-bulb {
+            animation: pulseGlow 2s infinite ease-in-out;
+        }
+
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #FDF8F2; }
+        ::-webkit-scrollbar-thumb { background: #8B1538; border-radius: 10px; }
+    </style>
+</head>
+<body class="text-slate-800 antialiased selection:bg-turmericYellow selection:text-slate-900">
+
+    <!-- Floating Decorative Petals Container -->
+    <div id="petals-container" aria-hidden="true"></div>
+
+    <!-- =====================================================================
+         FLOATING CONTROLS (Top-Right Language Switcher & Bottom-Right Music)
+    ====================================================================== -->
+    <div class="fixed top-4 right-4 z-50 flex items-center bg-white/95 backdrop-blur-md p-1 rounded-full shadow-lg border-2 border-royalMaroon">
+        <button id="btn-en" onclick="setLanguage('en')" class="px-3.5 py-1 rounded-full text-xs font-bold tracking-wider transition-all duration-300 text-slate-600 hover:text-slate-900">
+            EN
+        </button>
+        <button id="btn-bn" onclick="setLanguage('bn')" class="px-3.5 py-1 rounded-full text-xs font-bold transition-all duration-300 bg-royalMaroon text-white shadow-sm">
+            বাংলা
+        </button>
+    </div>
+
+    <!-- Floating Shehnai / Flute Music Button -->
+    <button id="music-toggle" onclick="toggleMusic()" aria-label="Toggle Wedding Music" class="fixed bottom-5 right-5 z-50 w-12 h-12 rounded-full bg-royalMaroon text-white shadow-xl border-2 border-turmericYellow flex items-center justify-center transition-transform active:scale-90 hover:scale-105">
+        <svg id="icon-muted" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11 5L6 9H2v6h4l5 4V5zM23 9l-6 6M17 9l6 6"/>
+        </svg>
+        <svg id="icon-playing" class="w-6 h-6 hidden animate-pulse text-turmericYellow" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11 5L6 9H2v6h4l5 4V5zM15.54 8.46a5 5 0 010 7.07M19.07 4.93a10 10 0 010 14.14"/>
+        </svg>
+    </button>
+
+    <!-- Custom Toast Notification Box -->
+    <div id="toast-box" class="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 bg-slate-900/95 text-white px-5 py-2.5 rounded-full text-sm font-medium shadow-2xl opacity-0 pointer-events-none transition-all duration-300 flex items-center gap-2 border border-turmericYellow whitespace-nowrap">
+        <span class="text-turmericYellow">✦</span>
+        <span id="toast-message">আপডেট সম্পন্ন হয়েছে</span>
+    </div>
+
+    <!-- =====================================================================
+         MAIN MOBILE-FIRST STORY CONTAINER
+    ====================================================================== -->
+    <main class="max-w-md mx-auto bg-gradient-to-b from-[#FFF7ED] via-[#FFFDF9] to-[#FEF3C7]/40 shadow-2xl min-h-screen relative overflow-hidden border-x border-amber-200/80">
+
+        <!-- =================================================================
+             SECTION 1: HERO SECTION (Bismillah, Names, Wedding Car & Royal Palki)
+        ================================================================== -->
+        <section class="relative pt-14 pb-8 px-4 flex flex-col items-center text-center">
+            
+            <!-- Top Scalloped Marigold & Mango Leaf Toran (বাঙালি বিয়ের তোরণ) -->
+            <div class="w-full overflow-hidden mb-3">
+                <svg viewBox="0 0 400 42" class="w-full h-10">
+                    <path d="M0,4 Q100,26 200,8 Q300,26 400,4" fill="none" stroke="#0D5C46" stroke-width="2.5"/>
+                    <!-- Mango Leaves & Marigold Flowers -->
+                    <g fill="#0D5C46">
+                        <ellipse cx="30" cy="18" rx="5" ry="11" transform="rotate(-15 30 18)"/>
+                        <ellipse cx="70" cy="24" rx="5" ry="11" transform="rotate(-5 70 24)"/>
+                        <ellipse cx="110" cy="24" rx="5" ry="11" transform="rotate(5 110 24)"/>
+                        <ellipse cx="150" cy="18" rx="5" ry="11" transform="rotate(15 150 18)"/>
+                        <ellipse cx="250" cy="18" rx="5" ry="11" transform="rotate(-15 250 18)"/>
+                        <ellipse cx="290" cy="24" rx="5" ry="11" transform="rotate(-5 290 24)"/>
+                        <ellipse cx="330" cy="24" rx="5" ry="11" transform="rotate(5 330 24)"/>
+                        <ellipse cx="370" cy="18" rx="5" ry="11" transform="rotate(15 370 18)"/>
+                    </g>
+                    <!-- Marigold Rosettes -->
+                    <circle cx="50" cy="17" r="6" fill="#F59E0B" stroke="#C81D3B" stroke-width="2"/>
+                    <circle cx="90" cy="21" r="6" fill="#FBBF24" stroke="#8B1538" stroke-width="2"/>
+                    <circle cx="130" cy="17" r="6" fill="#F59E0B" stroke="#C81D3B" stroke-width="2"/>
+                    <circle cx="200" cy="12" r="8" fill="#C81D3B" stroke="#FBBF24" stroke-width="2.5"/>
+                    <circle cx="270" cy="17" r="6" fill="#F59E0B" stroke="#C81D3B" stroke-width="2"/>
+                    <circle cx="310" cy="21" r="6" fill="#FBBF24" stroke="#8B1538" stroke-width="2"/>
+                    <circle cx="350" cy="17" r="6" fill="#F59E0B" stroke="#C81D3B" stroke-width="2"/>
+                </svg>
+            </div>
+
+            <!-- Royal Framed Hero Card -->
+            <div class="folk-royal-frame w-full rounded-2xl p-5 sm:p-6 relative bg-ivoryCream z-10">
+                <!-- Corner Lotus Ornaments -->
+                <div class="w-6 h-6 rounded-full bg-royalMaroon border-4 border-turmericYellow absolute -top-3 -left-3 shadow"></div>
+                <div class="w-6 h-6 rounded-full bg-royalMaroon border-4 border-turmericYellow absolute -top-3 -right-3 shadow"></div>
+                <div class="w-6 h-6 rounded-full bg-royalMaroon border-4 border-turmericYellow absolute -bottom-3 -left-3 shadow"></div>
+                <div class="w-6 h-6 rounded-full bg-royalMaroon border-4 border-turmericYellow absolute -bottom-3 -right-3 shadow"></div>
+
+                <!-- Bismillah Calligraphy -->
+                <p class="font-arabic text-2xl text-emeraldDeep mb-0.5" dir="rtl">
+                    بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+                </p>
+                <p id="ui-bismillah-sub" class="text-[11px] font-semibold text-slate-500 mb-3"></p>
+
+                <!-- Shubho Bibaho Pill Badge -->
+                <div class="inline-flex items-center gap-1.5 bg-royalMaroon text-turmericYellow px-4 py-1 rounded-full text-xs font-bold tracking-wider shadow-sm mb-2">
+                    <span>🪷</span>
+                    <span id="ui-hero-badge"></span>
+                    <span>🪷</span>
+                </div>
+
+                <!-- Couple Calligraphic Names -->
+                <h1 class="font-galada text-4xl sm:text-5xl text-royalMaroon leading-snug drop-shadow-sm my-2">
+                    <span id="ui-groom-short"></span>
+                    <span id="ui-and" class="block text-2xl text-marigoldGold font-hind font-bold my-0.5"></span>
+                    <span id="ui-bride-short"></span>
+                </h1>
+
+                <!-- =========================================================
+                     CENTERPIECE ILLUSTRATION: ROYAL BENGALI BRIDAL PALKI
+                ========================================================== -->
+                <div class="my-3 flex justify-center">
+                    <svg class="w-72 h-40 animate-palki drop-shadow-lg" viewBox="0 0 320 175">
+                        <!-- Carrying Bamboo / Gold-Capped Pole -->
+                        <rect x="8" y="42" width="304" height="8" rx="4" fill="#92400E" stroke="#451A03" stroke-width="1.5"/>
+                        <rect x="8" y="42" width="22" height="8" rx="3" fill="#F59E0B"/>
+                        <rect x="290" y="42" width="22" height="8" rx="3" fill="#F59E0B"/>
+                        <!-- Hanging Chains/Ropes from Pole to Palki Roof -->
+                        <line x1="85" y1="50" x2="85" y2="66" stroke="#D97706" stroke-width="3"/>
+                        <line x1="235" y1="50" x2="235" y2="66" stroke="#D97706" stroke-width="3"/>
+
+                        <!-- Ornate Curved Royal Palki Dome Roof -->
+                        <path d="M62,68 Q160,22 258,68 Z" fill="#8B1538" stroke="#F59E0B" stroke-width="3"/>
+                        <path d="M76,66 Q160,32 244,66" fill="none" stroke="#FBBF24" stroke-width="2" stroke-dasharray="5 3"/>
+                        <!-- Golden Kalash Finial on Top -->
+                        <circle cx="160" cy="36" r="6" fill="#F59E0B" stroke="#8B1538" stroke-width="2"/>
+                        <polygon points="156,30 160,20 164,30" fill="#FBBF24"/>
+
+                        <!-- Marigold & Rose Garlands Hanging Under Roof -->
+                        <path d="M68,68 Q90,82 112,68 Q135,82 160,68 Q185,82 208,68 Q230,82 252,68" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+                        <circle cx="90" cy="75" r="3.5" fill="#C81D3B"/>
+                        <circle cx="135" cy="75" r="3.5" fill="#C81D3B"/>
+                        <circle cx="185" cy="75" r="3.5" fill="#C81D3B"/>
+                        <circle cx="230" cy="75" r="3.5" fill="#C81D3B"/>
+
+                        <!-- Palki Cabin Body -->
+                        <rect x="74" y="68" width="172" height="72" rx="6" fill="#FFFBEB" stroke="#8B1538" stroke-width="3"/>
+                        <!-- Carved Wooden Pillars -->
+                        <rect x="74" y="68" width="12" height="72" fill="#991B1B" stroke="#F59E0B" stroke-width="1.5"/>
+                        <rect x="234" y="68" width="12" height="72" fill="#991B1B" stroke="#F59E0B" stroke-width="1.5"/>
+
+                        <!-- Silk Velvet Curtains (Left & Right Tied Back) -->
+                        <path d="M86,68 L122,68 Q104,105 86,138 Z" fill="#C81D3B" stroke="#F59E0B" stroke-width="1.5"/>
+                        <path d="M234,68 L198,68 Q216,105 234,138 Z" fill="#C81D3B" stroke="#F59E0B" stroke-width="1.5"/>
+                        <!-- Gold Curtain Tassels -->
+                        <circle cx="101" cy="106" r="3.5" fill="#FBBF24"/>
+                        <circle cx="219" cy="106" r="3.5" fill="#FBBF24"/>
+
+                        <!-- Bride & Groom Silhouette/Illustration Inside Palki -->
+                        <!-- Groom (Left) -->
+                        <circle cx="143" cy="98" r="9" fill="#FDBA74"/>
+                        <path d="M133,92 Q143,82 153,92 Z" fill="#F59E0B"/> <!-- Golden Pagri -->
+                        <path d="M130,138 L133,110 L153,110 L156,138 Z" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+                        <!-- Bride (Right) -->
+                        <circle cx="177" cy="100" r="8.5" fill="#FED7AA"/>
+                        <path d="M166,94 Q177,85 188,96 L192,138 L162,138 Z" fill="#8B1538" stroke="#FBBF24" stroke-width="1.5"/>
+                        <circle cx="177" cy="91" r="2.5" fill="#FBBF24"/> <!-- Tikli -->
+
+                        <!-- Ornate Base Platform & Gold Legs -->
+                        <rect x="66" y="140" width="188" height="10" rx="4" fill="#8B1538" stroke="#F59E0B" stroke-width="2"/>
+                        <rect x="82" y="150" width="10" height="14" rx="2" fill="#D97706"/>
+                        <rect x="228" y="150" width="10" height="14" rx="2" fill="#D97706"/>
+                    </svg>
+                </div>
+
+                <!-- Main Date & Venue Summary -->
+                <p id="ui-hero-date" class="text-base sm:text-lg font-extrabold text-slate-800"></p>
+                <p id="ui-hero-venue" class="text-sm font-semibold text-emeraldDeep mt-0.5"></p>
+                <p id="ui-hero-host" class="text-xs font-bold text-royalMaroon mt-3 pt-2.5 border-t border-dashed border-amber-300"></p>
+            </div>
+
+            <!-- Scroll Down CTA Pill -->
+            <a href="#invitation-section" class="mt-6 z-20 inline-flex items-center gap-2 bg-emeraldDeep hover:bg-emerald-900 text-white font-bold text-sm px-6 py-3 rounded-full shadow-lg border-2 border-turmericYellow transition-transform active:scale-95">
+                <span id="ui-scroll-btn"></span>
+                <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+                </svg>
+            </a>
+        </section>
+
+        <!-- =================================================================
+             SCROLL-LINKED FESTIVE ROAD #1: FLOWER-DECORATED WEDDING CAR (বিয়ের গাড়ি)
+        ================================================================== -->
+        <div class="wedding-road w-full overflow-hidden my-2" data-road="1">
+            <div class="car-vehicle absolute bottom-2 left-3 transition-transform duration-150 ease-out" data-dir="right">
+                <!-- Detailed Vintage/Classic Flower-Decorated Wedding Car SVG -->
+                <svg class="w-44 h-20 animate-car drop-shadow-xl" viewBox="0 0 240 105">
+                    <!-- Trailing Festive Tin Cans / Ribbons at Rear -->
+                    <path d="M15,72 Q5,66 2,74" fill="none" stroke="#FBBF24" stroke-width="2"/>
+                    <path d="M15,75 Q6,78 3,84" fill="none" stroke="#C81D3B" stroke-width="2"/>
+
+                    <!-- Classic Sedan Cabin Roof & Windows -->
+                    <path d="M52,48 L72,22 Q78,18 90,18 L145,18 Q156,18 164,26 L180,48 Z" fill="#FFFBEB" stroke="#8B1538" stroke-width="2.5"/>
+                    <!-- Rear & Front Windows -->
+                    <path d="M75,24 L112,24 L112,45 L58,45 Z" fill="#BAE6FD" stroke="#1E293B" stroke-width="1.5"/>
+                    <path d="M118,24 L154,24 L172,45 L118,45 Z" fill="#BAE6FD" stroke="#1E293B" stroke-width="1.5"/>
+                    
+                    <!-- Bride & Groom Silhouettes Inside Car -->
+                    <circle cx="132" cy="34" r="5.5" fill="#FDBA74"/>
+                    <path d="M126,29 Q132,23 138,29 Z" fill="#F59E0B"/>
+                    <circle cx="146" cy="35" r="5" fill="#FED7AA"/>
+                    <path d="M140,30 Q146,25 152,32 L154,44 L139,44 Z" fill="#C81D3B"/>
+
+                    <!-- Roof Flower Crown Bouquet -->
+                    <ellipse cx="118" cy="15" rx="22" ry="6" fill="#0D5C46"/>
+                    <circle cx="106" cy="14" r="4.5" fill="#C81D3B"/>
+                    <circle cx="118" cy="13" r="5.5" fill="#F59E0B"/>
+                    <circle cx="130" cy="14" r="4.5" fill="#C81D3B"/>
+
+                    <!-- Car Main Body (Pearl Cream & Royal Maroon Trim) -->
+                    <path d="M18,52 Q18,46 28,46 L196,46 Q216,46 222,60 L224,76 Q224,80 216,80 L22,80 Q15,80 15,72 Z" fill="#FFFDF7" stroke="#8B1538" stroke-width="2.5"/>
+                    <!-- Maroon Royal Side Stripe -->
+                    <path d="M18,62 L222,62 L222,68 L18,68 Z" fill="#8B1538"/>
+
+                    <!-- Hood Rose & Marigold Garland V-Shape -->
+                    <path d="M178,46 Q200,56 220,54" fill="none" stroke="#0D5C46" stroke-width="4"/>
+                    <circle cx="186" cy="49" r="3.5" fill="#C81D3B"/>
+                    <circle cx="198" cy="52" r="4" fill="#FBBF24"/>
+                    <circle cx="210" cy="53" r="3.5" fill="#C81D3B"/>
+
+                    <!-- Side Door "শুভ বিবাহ" Floral Plaque -->
+                    <rect x="86" y="51" width="66" height="22" rx="6" fill="#8B1538" stroke="#FBBF24" stroke-width="2"/>
+                    <text x="119" y="65" text-anchor="middle" fill="#FBBF24" font-size="10.5" font-weight="bold" font-family="Hind Siliguri, sans-serif">শুভ বিবাহ</text>
+
+                    <!-- Chrome Bumpers & Headlight -->
+                    <rect x="10" y="72" width="12" height="7" rx="3" fill="#CBD5E1" stroke="#475569" stroke-width="1.5"/>
+                    <rect x="216" y="72" width="14" height="7" rx="3" fill="#CBD5E1" stroke="#475569" stroke-width="1.5"/>
+                    <circle cx="222" cy="57" r="4" fill="#FEF08A" stroke="#D97706" stroke-width="1.5"/>
+
+                    <!-- Classic Whitewall Wheels -->
+                    <g class="wheel-spin" style="transform-origin: 58px 80px;">
+                        <circle cx="58" cy="80" r="16" fill="#1E293B"/>
+                        <circle cx="58" cy="80" r="10" fill="#FFFBEB"/>
+                        <circle cx="58" cy="80" r="5" fill="#8B1538"/>
+                    </g>
+                    <g class="wheel-spin" style="transform-origin: 180px 80px;">
+                        <circle cx="180" cy="80" r="16" fill="#1E293B"/>
+                        <circle cx="180" cy="80" r="10" fill="#FFFBEB"/>
+                        <circle cx="180" cy="80" r="5" fill="#8B1538"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+        <!-- =================================================================
+             SECTION 2: CORDIAL INVITATION NOTE (সাদর নিমন্ত্রণ)
+        ================================================================== -->
+        <section id="invitation-section" class="py-9 px-4">
+            <div class="scalloped-card rounded-2xl p-6 text-center">
+                <div class="inline-block bg-royalMaroon text-white px-5 py-1.5 rounded-full text-sm font-bold shadow mb-3">
+                    <span id="ui-cordial-title"></span>
+                </div>
+
+                <p id="ui-invitation-body" class="text-sm sm:text-base text-slate-700 leading-relaxed font-medium"></p>
+
+                <div class="mt-5 pt-3 border-t border-dashed border-amber-300">
+                    <p id="ui-regards" class="text-xs text-slate-500"></p>
+                    <p id="ui-families-sig" class="font-bold text-base text-emeraldDeep mt-0.5"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================================
+             SECTION 3: GROOM & BRIDE SCALLOPED ARCH CARDS (বর ও কনে পরিচিতি)
+        ================================================================== -->
+        <section class="py-6 px-4">
+            <div class="text-center mb-6">
+                <span id="ui-uniting-badge" class="text-xs font-bold uppercase tracking-widest text-royalMaroon bg-rose-100 px-3.5 py-1 rounded-full"></span>
+                <h2 id="ui-two-homes-title" class="font-serif-bn text-3xl font-extrabold text-slate-800 mt-2"></h2>
+            </div>
+
+            <div class="space-y-5">
+                <!-- Groom Scalloped Arch Card -->
+                <div class="bg-gradient-to-br from-emeraldDeep to-[#083D2E] text-white rounded-t-[3.5rem] rounded-b-2xl p-6 border-4 border-marigoldGold shadow-xl text-center relative overflow-hidden">
+                    <span id="ui-groom-label" class="inline-block bg-turmericYellow text-slate-900 text-xs font-extrabold px-3.5 py-1 rounded-full mb-2"></span>
+                    <div class="text-3xl my-1">🤵</div>
+                    <h3 id="ui-groom-full" class="font-galada text-3xl sm:text-4xl text-turmericYellow mt-1"></h3>
+                    <p id="ui-groom-parents" class="text-xs sm:text-sm text-emerald-50 mt-2 leading-relaxed max-w-xs mx-auto"></p>
+                </div>
+
+                <!-- Bride Scalloped Arch Card -->
+                <div class="bg-gradient-to-br from-royalMaroon to-[#5E0B24] text-white rounded-t-[3.5rem] rounded-b-2xl p-6 border-4 border-marigoldGold shadow-xl text-center relative overflow-hidden">
+                    <span id="ui-bride-label" class="inline-block bg-turmericYellow text-slate-900 text-xs font-extrabold px-3.5 py-1 rounded-full mb-2"></span>
+                    <div class="text-3xl my-1">👰</div>
+                    <h3 id="ui-bride-full" class="font-galada text-3xl sm:text-4xl text-turmericYellow mt-1"></h3>
+                    <p id="ui-bride-parents" class="text-xs sm:text-sm text-rose-50 mt-2 leading-relaxed max-w-xs mx-auto"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================================
+             SECTION 4: LIVE COUNTDOWN TIMER (Synced strictly to WEDDING_CONFIG)
+        ================================================================== -->
+        <section class="py-9 px-4 text-center">
+            <p id="ui-cd-badge" class="text-xs font-bold text-emeraldDeep uppercase tracking-widest"></p>
+            <h2 id="ui-cd-title" class="font-serif-bn text-3xl font-extrabold text-slate-800 mt-1 mb-2"></h2>
+            <p id="ui-cd-exact-date" class="text-xs font-bold text-royalMaroon bg-amber-100 inline-block px-3.5 py-1 rounded-full mb-5"></p>
+
+            <!-- 4 Countdown Boxes -->
+            <div id="countdown-grid" class="grid grid-cols-4 gap-2.5 max-w-sm mx-auto">
+                <div class="bg-white rounded-xl shadow-lg border-2 border-royalMaroon overflow-hidden">
+                    <div id="ui-lbl-days" class="bg-royalMaroon text-turmericYellow text-xs font-extrabold py-1.5"></div>
+                    <div id="cd-days" class="py-3 text-2xl sm:text-3xl font-extrabold text-slate-900">০০</div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg border-2 border-emeraldDeep overflow-hidden">
+                    <div id="ui-lbl-hours" class="bg-emeraldDeep text-white text-xs font-extrabold py-1.5"></div>
+                    <div id="cd-hours" class="py-3 text-2xl sm:text-3xl font-extrabold text-slate-900">০০</div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg border-2 border-marigoldGold overflow-hidden">
+                    <div id="ui-lbl-mins" class="bg-marigoldGold text-slate-900 text-xs font-extrabold py-1.5"></div>
+                    <div id="cd-mins" class="py-3 text-2xl sm:text-3xl font-extrabold text-slate-900">০০</div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg border-2 border-turquoiseAccent overflow-hidden">
+                    <div id="ui-lbl-secs" class="bg-turquoiseAccent text-white text-xs font-extrabold py-1.5"></div>
+                    <div id="cd-secs" class="py-3 text-2xl sm:text-3xl font-extrabold text-festiveCrimson">০০</div>
+                </div>
+            </div>
+
+            <!-- Automatic Event Live / Completed Status Banner -->
+            <div id="cd-live-status" class="hidden mt-4 bg-emeraldDeep text-turmericYellow font-bold text-sm py-3 px-4 rounded-xl border-2 border-turmericYellow shadow-md"></div>
+        </section>
+
+        <!-- =================================================================
+             SCROLL-LINKED FESTIVE ROAD #2: ROYAL BRIDAL PALKI PROCESSION
+        ================================================================== -->
+        <div class="wedding-road w-full overflow-hidden my-2" data-road="2">
+            <div class="car-vehicle absolute bottom-2 right-3 transition-transform duration-150 ease-out" data-dir="left">
+                <!-- Palki Procession SVG on the Road -->
+                <svg class="w-44 h-20 animate-palki drop-shadow-xl" viewBox="0 0 240 105">
+                    <!-- Bamboo Pole -->
+                    <rect x="10" y="32" width="220" height="6" rx="3" fill="#B45309" stroke="#451A03" stroke-width="1.5"/>
+                    <rect x="10" y="32" width="16" height="6" rx="2" fill="#FBBF24"/>
+                    <rect x="214" y="32" width="16" height="6" rx="2" fill="#FBBF24"/>
+                    <!-- Bearers Silhouettes (Front & Back) -->
+                    <circle cx="34" cy="26" r="5" fill="#FDBA74"/>
+                    <path d="M27,23 L41,23 L34,17 Z" fill="#C81D3B"/> <!-- Turban -->
+                    <rect x="28" y="32" width="12" height="32" rx="4" fill="#FEF3C7" stroke="#8B1538" stroke-width="1.5"/>
+                    <line x1="31" y1="64" x2="29" y2="84" stroke="#8B1538" stroke-width="3.5" stroke-linecap="round"/>
+                    <line x1="37" y1="64" x2="40" y2="84" stroke="#8B1538" stroke-width="3.5" stroke-linecap="round"/>
+
+                    <circle cx="206" cy="26" r="5" fill="#FDBA74"/>
+                    <path d="M199,23 L213,23 L206,17 Z" fill="#C81D3B"/>
+                    <rect x="200" y="32" width="12" height="32" rx="4" fill="#FEF3C7" stroke="#8B1538" stroke-width="1.5"/>
+                    <line x1="203" y1="64" x2="201" y2="84" stroke="#8B1538" stroke-width="3.5" stroke-linecap="round"/>
+                    <line x1="209" y1="64" x2="212" y2="84" stroke="#8B1538" stroke-width="3.5" stroke-linecap="round"/>
+
+                    <!-- Palki Cabin -->
+                    <path d="M62,38 Q120,12 178,38 Z" fill="#8B1538" stroke="#FBBF24" stroke-width="2"/>
+                    <rect x="70" y="38" width="100" height="42" rx="4" fill="#FFFBEB" stroke="#8B1538" stroke-width="2.5"/>
+                    <path d="M70,38 L95,38 Q82,58 70,78 Z" fill="#C81D3B"/>
+                    <path d="M170,38 L145,38 Q158,58 170,78 Z" fill="#C81D3B"/>
+                    <!-- Bride inside -->
+                    <circle cx="120" cy="54" r="6" fill="#FED7AA"/>
+                    <path d="M112,50 Q120,44 128,52 L131,78 L109,78 Z" fill="#8B1538"/>
+                    <rect x="64" y="80" width="112" height="6" rx="3" fill="#F59E0B"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- =================================================================
+             SECTION 5: WEDDING EVENTS TIMELINE (অনুষ্ঠানসূচি)
+        ================================================================== -->
+        <section class="py-8 px-4 space-y-6">
+            <div class="text-center">
+                <p id="ui-events-sub" class="text-xs font-bold text-royalMaroon tracking-wider uppercase"></p>
+                <h2 id="ui-events-title" class="font-serif-bn text-3xl font-extrabold text-slate-800 mt-1"></h2>
+            </div>
+
+            <!-- Dynamic Event Cards Container (Populated directly from WEDDING_CONFIG) -->
+            <div id="events-list" class="space-y-6"></div>
+        </section>
+
+        <!-- =================================================================
+             SECTION 6: INTERACTIVE VENUE & GOOGLE MAPS PREVIEW CARD
+        ================================================================== -->
+        <section class="py-6 px-4">
+            <div class="bg-white rounded-2xl border-3 border-emeraldDeep shadow-xl overflow-hidden">
+                <div class="bg-emeraldDeep text-white p-4 text-center">
+                    <span id="ui-venue-badge" class="text-[11px] font-bold uppercase tracking-widest bg-white/15 px-3 py-1 rounded-full"></span>
+                    <h3 id="ui-main-venue-name" class="font-serif-bn text-2xl font-extrabold text-turmericYellow mt-2"></h3>
+                    <p id="ui-main-venue-address" class="text-xs sm:text-sm text-emerald-100 mt-1"></p>
+                </div>
+
+                <!-- Interactive Styled Map Preview Card -->
+                <div class="relative h-44 bg-[#E6F4EA] overflow-hidden flex items-center justify-center border-y border-emerald-200">
+                    <!-- Decorative Stylized Map Grid & Roads SVG -->
+                    <svg class="w-full h-full opacity-70" viewBox="0 0 400 180" preserveAspectRatio="none">
+                        <rect width="400" height="180" fill="#ECFDF5"/>
+                        <path d="M0,45 L400,65 M0,130 L400,115 M110,0 L135,180 M280,0 L260,180" stroke="#CBD5E1" stroke-width="10"/>
+                        <path d="M0,90 Q200,70 400,95" stroke="#FBBF24" stroke-width="8" fill="none"/>
+                        <circle cx="70" cy="30" r="18" fill="#A7F3D0"/>
+                        <circle cx="330" cy="145" r="24" fill="#A7F3D0"/>
+                    </svg>
+                    <!-- Center Pulsing Map Pin -->
+                    <a id="ui-map-preview-link" href="#" target="_blank" rel="noopener" class="absolute z-10 flex flex-col items-center group">
+                        <div class="bg-royalMaroon text-white px-3.5 py-1.5 rounded-full text-xs font-bold shadow-lg border-2 border-white mb-1 group-hover:scale-105 transition">
+                            <span id="ui-map-pin-label"></span>
+                        </div>
+                        <div class="w-9 h-9 rounded-full bg-festiveCrimson text-white flex items-center justify-center shadow-xl border-2 border-white animate-bounce">
+                            📍
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Map Navigation & Copy Address Buttons -->
+                <div class="p-4 grid grid-cols-2 gap-2.5 bg-ivoryCream">
+                    <a id="ui-main-map-btn" href="#" target="_blank" rel="noopener" class="flex items-center justify-center gap-1.5 bg-royalMaroon hover:bg-rose-900 text-white font-bold text-xs py-3 px-3 rounded-xl shadow transition">
+                        <span>🗺️</span>
+                        <span id="ui-btn-open-map"></span>
+                    </a>
+                    <button onclick="copyVenueAddress()" class="flex items-center justify-center gap-1.5 bg-emeraldDeep hover:bg-emerald-900 text-white font-bold text-xs py-3 px-3 rounded-xl shadow transition">
+                        <span>📋</span>
+                        <span id="ui-btn-copy-addr"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================================
+             SECTION 7: INTERACTIVE RSVP & BLESSINGS WALL (দোয়া ও শুভেচ্ছা)
+        ================================================================== -->
+        <section class="py-6 px-4">
+            <div class="scalloped-card rounded-2xl p-5">
+                <div class="text-center mb-4">
+                    <span class="text-2xl">💌</span>
+                    <h3 id="ui-rsvp-title" class="font-serif-bn text-2xl font-extrabold text-royalMaroon mt-1"></h3>
+                    <p id="ui-rsvp-sub" class="text-xs text-slate-600 mt-0.5"></p>
+                </div>
+
+                <form onsubmit="submitWish(event)" class="space-y-3">
+                    <input id="wish-name" type="text" required class="w-full px-3.5 py-2.5 text-sm rounded-xl border border-amber-300 bg-white focus:outline-none focus:border-royalMaroon" placeholder="আপনার নাম / Your Name">
+                    
+                    <div class="grid grid-cols-2 gap-2">
+                        <select id="wish-attending" class="w-full px-3 py-2.5 text-xs font-semibold rounded-xl border border-amber-300 bg-white focus:outline-none focus:border-royalMaroon">
+                            <option value="yes">✅ উপস্থিত থাকবনা / Attending</option>
+                            <option value="blessing">🤲 দোয়া করবোনা / Sending Blessings</option>
+                        </select>
+                        <select id="wish-guests" class="w-full px-3 py-2.5 text-xs font-semibold rounded-xl border border-amber-300 bg-white focus:outline-none focus:border-royalMaroon">
+                            <option value="1">১ জন অতিথি / 1 Guest</option>
+                            <option value="2" selected>২ জন অতিথি / 2 Guests</option>
+                            <option value="3">৩ জন অতিথি / 3 Guests</option>
+                            <option value="4+">৪+ গুস্টিসহ / Family</option>
+                        </select>
+                    </div>
+
+                    <textarea id="wish-message" rows="2" required class="w-full px-3.5 py-2 text-sm rounded-xl border border-amber-300 bg-white focus:outline-none focus:border-royalMaroon" placeholder="নবদম্পতির জন্য আপনার যা মনে চায় লিখুন..."></textarea>
+
+                    <button type="submit" class="w-full bg-gradient-to-r from-royalMaroon to-festiveCrimson hover:opacity-95 text-white font-bold text-sm py-3 rounded-xl shadow-md transition active:scale-98">
+                        <span id="ui-rsvp-submit"></span>
+                    </button>
+                </form>
+
+                <!-- Recent Blessings Display -->
+                <div id="wishes-wall" class="mt-5 pt-4 border-t border-dashed border-amber-300 space-y-2.5 max-h-48 overflow-y-auto"></div>
+            </div>
+        </section>
+
+        <!-- =================================================================
+             SECTION 8: DHAKA NIGHT SKY FINALE & CLOSING CARD
+        ================================================================== -->
+        <section class="bg-gradient-to-b from-[#1E1B4B] via-[#31102F] to-[#0F172A] text-white pt-10 pb-12 px-4 mt-4 relative overflow-hidden">
+            <!-- Fairy Lights String -->
+            <div class="w-full mb-4">
+                <svg viewBox="0 0 400 36" class="w-full h-9 overflow-visible">
+                    <path d="M0,5 Q200,34 400,5" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+                    <circle cx="35" cy="11" r="4.5" fill="#FDE047" class="fairy-bulb"/>
+                    <circle cx="85" cy="17" r="4.5" fill="#FB7185" class="fairy-bulb" style="animation-delay:0.3s"/>
+                    <circle cx="135" cy="20" r="4.5" fill="#FDE047" class="fairy-bulb" style="animation-delay:0.6s"/>
+                    <circle cx="185" cy="21" r="4.5" fill="#34D399" class="fairy-bulb" style="animation-delay:0.9s"/>
+                    <circle cx="235" cy="20" r="4.5" fill="#FDE047" class="fairy-bulb" style="animation-delay:1.2s"/>
+                    <circle cx="285" cy="17" r="4.5" fill="#FB7185" class="fairy-bulb" style="animation-delay:1.5s"/>
+                    <circle cx="335" cy="12" r="4.5" fill="#38BDF8" class="fairy-bulb" style="animation-delay:0.5s"/>
+                    <circle cx="375" cy="7" r="4.5" fill="#FDE047" class="fairy-bulb" style="animation-delay:1.0s"/>
+                </svg>
+            </div>
+
+            <!-- Final Closing Card -->
+            <div class="folk-royal-frame rounded-2xl p-6 text-center text-slate-800 max-w-sm mx-auto">
+                <p class="text-2xl mb-1">🪷</p>
+                <h3 id="ui-final-heading" class="font-galada text-3xl text-royalMaroon leading-snug"></h3>
+                <p id="ui-final-body" class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed"></p>
+
+                <div class="my-4 pt-3 border-t border-dashed border-amber-400">
+                    <p id="ui-final-couple" class="font-galada text-2xl text-emeraldDeep"></p>
+                    <p id="ui-final-date-tag" class="text-xs font-bold text-slate-500 mt-1"></p>
+                </div>
+            </div>
+
+            <footer class="text-center mt-8 text-xs text-slate-300 space-y-1">
+                <p id="ui-footer-host" class="font-semibold text-turmericYellow"></p>
+                <p class="text-[11px] text-slate-400">বড় ভাই হাসিবুল্লাহ (বিবাহিত), মাহু দালাল (অবিবাহিত), আমীর খান ইজাজ(প্রবাহিত)</p>
+            </footer>
+        </section>
+
+    </main>
+
+    <!-- =====================================================================
+         JAVASCRIPT: CENTRAL WEDDING_CONFIG + DYNAMIC ENGINE
+    ====================================================================== -->
+    <script>
+        /**
+         * ===================================================================
+         * 🎯 CENTRAL WEDDING CONFIGURATION (শুধুমাত্র এই অংশটি এডিট করুন)
+         * ===================================================================
+         * এখান থেকে নাম, বিয়ের আসল তারিখ-সময় এবং Google Maps লিংক পরিবর্তন করলে
+         * পুরো ওয়েবসাইট, লাইভ কাউন্টডাউন এবং ক্যালেন্ডার ফাইল অটোমেটিক আপডেট হবে।
+         */
+        const WEDDING_CONFIG = {
+            // ১. লাইভ কাউন্টডাউন টাইমারের জন্য মূল বিয়ের তারিখ ও সময় (ISO 8601 ফরম্যাট, +06:00 হলো বাংলাদেশ সময়)
+            // ফরম্যাট: "YYYY-MM-DDTHH:MM:SS+06:00"
+            countdownTargetISO: "2027-02-19T19:00:00+06:00",
+
+            // ২. বর ও কনের তথ্য (বাংলা ও ইংরেজি)
+            couple: {
+                groomShort: { bn: "সিয়াম উল্লাহ", en: "SIAM ULLAH" },
+                brideShort: { bn: "মিসেস উল্লাহ", en: "mst ULLAH" },
+                groomFull:  { bn: "সিয়াম উল্লাহ", en: "SIAM ULLA" },
+                brideFull:  { bn: "মিসেস উল্লাহ", en: "mst ULLAH" },
+                groomParents: {
+                    bn: "জনাব রফিকুল জামাল ও জনাবা তাহমিনা জামাল-এর জ্যেষ্ঠ পুত্র",
+                    en: "Eldest son of Mr. Rafiqul Jamal & Mrs. Tahmina Jamal"
+                },
+                brideParents: {
+                    bn: "জনাব ইকবাল চৌধুরী ও জনাবা ফারহানা চৌধুরী-এর কনিষ্ঠ কন্যা",
+                    en: "Youngest daughter of Mr. Iqbal Chowdhury & Mrs. Farhana Chowdhury"
+                },
+                familiesHost: {
+                    bn: "আয়োজনে: চুরি করে কাজি অফিসে",
+                    en: "Hosted by: No Family only Kazi Office"
+                },
+                familiesSignature: {
+                    bn: "কাজি সাহেব ও তার ডান হাত",
+                    en: "Kazi Shaheb & Her Secretary"
+                }
+            },
+
+            // ৩. মূল বিয়ের তারিখ ও প্রধান ভেন্যু (Hero এবং Map সেকশনের জন্য)
+            mainWedding: {
+                dateDisplay: { bn: "শুক্রবার, ১৯ ফেব্রুয়ারি ২০২৭", en: "Friday, 19 February 2027" },
+                shortDateTag: { bn: "১৯ . ০২ . ২০২৭ • ঢাকা", en: "19 . 02 . 2027 • Dhaka" },
+                venueName:   { bn: "কাজি টাওয়ার, ভাটারা, ঢাকা", en: "The Olives, Banani, Dhaka" },
+                fullAddress: {
+                    bn: "ক-৫৭/১,কাজি টাওয়ার, কুড়িল চৌরাস্তা, প্রগতি স্বরণী, ভাটারা, ঢাকা ১২২৯, বাংলাদেশ",
+                    en: " A-57/1 Kazi Tower, Kuril Chowrasta, Pragati Swarani, Vatara, Dhaka, Bangladesh"
+                },
+                // আপনার ভেন্যুর আসল Google Maps লিংক এখানে বসান:
+                googleMapsUrl: "https://maps.app.goo.gl/A9TChgTMmWSuUk62A"
+            },
+
+            // ৪. ৩টি অনুষ্ঠানের বিস্তারিত সময়সূচি, ম্যাপ লিংক এবং ক্যালেন্ডার (.ics) তথ্য
+            events: [
+                {
+                    id: "holud",
+                    icon: "🌼",
+                    themeColor: "amber", // amber | maroon | emerald
+                    title:    { bn: "গোয়া হলুদ", en: "Goya Holud" },
+                    subtitle: { bn: "হলুদ, গান আর আনন্দের রঙিন সকাল", en: "Turmeric, music & vibrant festivities" },
+                    dateText: { bn: "বৃহস্পতিবার, ১৮ ফেব্রুয়ারি ২০২৭", en: "Thursday, 18 February 2027" },
+                    timeText: { bn: "বিকেল ৪:৩০ টা থেকে", en: "From 4:30 PM onwards" },
+                    venue:    { bn: "গুলশান কমিউনিটি কনভেনশন সেন্টার", en: "Gulshan Community Convention Center" },
+                    address:  { bn: "গুলশান-২, ঢাকা ১২১২", en: "Gulshan-2, Dhaka 1212" },
+                    mapUrl:   "https://maps.google.com/?q=Gulshan+2+Dhaka",
+                    // ক্যালেন্ডার (.ics) ফাইলের জন্য শুরু ও শেষের সময় (YYYYMMDDTHHMMSS)
+                    icsStart: "20270218T163000",
+                    icsEnd:   "20270218T220000"
+                },
+                {
+                    id: "biye",
+                    icon: "💍",
+                    themeColor: "maroon",
+                    title:    { bn: "শুভ বিবাহ", en: "The Wedding (Nikah)" },
+                    subtitle: { bn: "সিয়াম উল্লাহ ও ্মিসেস উল্লাহ শুভ বিবাহ আসর", en: "Auspicious Nikah & Wedding Ceremony" },
+                    dateText: { bn: "শুক্রবার, ১৯ ফেব্রুয়ারি ২০২৭", en: "Friday, 19 February 2027" },
+                    timeText: { bn: "সন্ধ্যা ৭:০০ টা থেকে", en: "From 7:00 PM onwards" },
+                    venue:    { bn: "দ্য অলিভস", en: "The Olives" },
+                    address:  { bn: "ক-৫৭/১,কাজি টাওয়ার, কুড়িল চৌরাস্তা, প্রগতি স্বরণী, ভাটারা, ঢাকা ১২২৯, বাংলাদেশ", en: "A-57/1 Kazi Tower, Kuril Chowrasta, Pragati Swarani, Vatara, Dhaka, Bangladesh" },
+                    mapUrl:   "https://maps.app.goo.gl/A9TChgTMmWSuUk62A",
+                    icsStart: "20270219T190000",
+                    icsEnd:   "20270219T233000"
+                },
+                {
+                    id: "boubhat",
+                    icon: "🎊",
+                    themeColor: "emerald",
+                    title:    { bn: "বউভাত ও সংবর্ধনা", en: "Bou Bhat Reception" },
+                    subtitle: { bn: "নতুন বউকে বরণ ও প্রীতিভোজ", en: "Welcoming the Bride & Wedding Feast" },
+                    dateText: { bn: "রবিবার, ২১ ফেব্রুয়ারি ২০২৭", en: "Sunday, 21 February 2027" },
+                    timeText: { bn: "সন্ধ্যা ৭:৩০ টা থেকে", en: "From 7:30 PM onwards" },
+                    venue:    { bn: "সেনা মালঞ্চ", en: "Sena Malancha" },
+                    address:  { bn: "ঢাকা ক্যান্টনমেন্ট, ঢাকা ১২০৬", en: "Dhaka Cantonment, Dhaka 1206" },
+                    mapUrl:   "https://maps.google.com/?q=Sena+Malancha+Dhaka",
+                    icsStart: "20270221T193000",
+                    icsEnd:   "20270221T233000"
+                }
+            ]
+        };
+
+        // ===================================================================
+        // STATIC UI LABELS (বাংলা & English)
+        // ===================================================================
+        const UI_TEXT = {
+            bn: {
+                bismillahSub: "পরম করুণাময় আল্লাহর নামে শুরু করছি",
+                heroBadge: "শুভ বিবাহের নিমন্ত্রণ",
+                and: "ও",
+                scrollBtn: "নিচে স্ক্রল করুন",
+                cordialTitle: "সাদর নিমন্ত্রণ",
+                invitationBody: `পরম করুণাময় মহান আল্লাহ তায়ালার অশেষ মেহেরবানীতে আমাদের প্রিয় শয়তান <strong class="text-royalMaroon">${WEDDING_CONFIG.couple.groomShort.bn}</strong> ও <strong class="text-emeraldDeep">${WEDDING_CONFIG.couple.brideShort.bn}</strong>-এর শুভ বিবাহ অনুষ্ঠানের আয়োজন করা হয়েছে। এই আনন্দঘন মুহূর্তে আপনাদের আসার দরকার নাই কারণ আমরা নিজেরা নিজেরা বিয়ে করবো।`,
+                regards: "বিনীত নিবেদক",
+                unitingBadge: "দুই পরিবারের মেলবন্ধন কাজি অফিস",
+                twoHomesTitle: "বর ও কনে পরিচিতি",
+                groomLabel: "বর পরিচিতি",
+                brideLabel: "কনে পরিচিতি",
+                cdBadge: "ক্ষণগণনা",
+                cdTitle: "শুভ দিনের অপেক্ষায়",
+                lblDays: "দিন",
+                lblHours: "ঘণ্টা",
+                lblMins: "মিনিট",
+                lblSecs: "সেকেন্ড",
+                eventArrived: "🎉 আলহামদুলিল্লাহ! শুভ বিবাহের দিন উপস্থিত হয়েছে!",
+                eventsSub: "আনন্দের দিনক্ষণ",
+                eventsTitle: "অনুষ্ঠানসূচি",
+                btnMap: "Google Maps-এ দেখুন",
+                btnCal: "ক্যালেন্ডারে সেভ",
+                venueBadge: "প্রধান অনুষ্ঠানস্থল ও লোকেশন",
+                mapPinLabel: "লোকেশন দেখতে ক্লিক করুন",
+                btnOpenMap: "ম্যাপ ওপেন করুন",
+                btnCopyAddr: "ঠিকানা কপি করুন",
+                rsvpTitle: "দোয়া ও উপস্থিতি জানান",
+                rsvpSub: "নবদম্পতির জন্য আপনার শুভকামনা ও বার্তা লিখে রাখুন",
+                rsvpSubmit: "শুভেচ্ছা পাঠান ✨",
+                finalHeading: "আপনার উপস্থিতির অপেক্ষায় রইলাম",
+                finalBody: "বালের বিয়ে এই বিয়ে সম্ভব না আর সিয়াম কখনও আমাদের খাওয়াবেও না হুদাই বানালাম কেউ দোয়া করবেন না",
+                toastCal: "ক্যালেন্ডার ফাইল (.ics) ডাউনলোড হয়েছে!",
+                toastCopy: "ভেন্যুর ঠিকানা কপি করা হয়েছে!",
+                toastWish: "আপনার আন্তরিক শুভেচ্ছার জন্য ধন্যবাদ! ❤️",
+                toastMusicOn: "বিয়ের সানাইয়ের সুর চালু হয়েছে 🎶",
+                toastMusicOff: "মিউজিক বন্ধ করা হয়েছে"
+            },
+            en: {
+                bismillahSub: "In the name of Allah, the Most Gracious, the Most Merciful",
+                heroBadge: "Royal Wedding Invitation",
+                and: "&",
+                scrollBtn: "Scroll Down",
+                cordialTitle: "Cordial Invitation",
+                invitationBody: `With the infinite grace of Almighty Allah, we joyfully invite you and your family to grace the wedding ceremony of our beloved <strong class="text-royalMaroon">${WEDDING_CONFIG.couple.groomShort.en}</strong> & <strong class="text-emeraldDeep">${WEDDING_CONFIG.couple.brideShort.en}</strong>. Your warm presence and heartfelt blessings will make this celebration truly memorable.`,
+                regards: "Warm Regards",
+                unitingBadge: "Uniting Two Families",
+                twoHomesTitle: "Bride & Groom",
+                groomLabel: "The Groom",
+                brideLabel: "The Bride",
+                cdBadge: "Counting Moments",
+                cdTitle: "Counting Down",
+                lblDays: "Days",
+                lblHours: "Hours",
+                lblMins: "Mins",
+                lblSecs: "Secs",
+                eventArrived: "🎉 Alhamdulillah! The Wedding Celebration is Here!",
+                eventsSub: "Save The Dates",
+                eventsTitle: "Wedding Events Timeline",
+                btnMap: "View on Map",
+                btnCal: "Add to Calendar",
+                venueBadge: "Main Venue & Location",
+                mapPinLabel: "Tap to Open Google Maps",
+                btnOpenMap: "Open in Maps",
+                btnCopyAddr: "Copy Address",
+                rsvpTitle: "RSVP & Warm Wishes",
+                rsvpSub: "Leave your blessings and confirm your presence",
+                rsvpSubmit: "Send Blessings ✨",
+                finalHeading: "We Await Your Presence",
+                finalBody: "Your presence will complete our joy. Please keep us in your prayers as we embark on this beautiful new journey together.",
+                toastCal: "Calendar invite (.ics) downloaded!",
+                toastCopy: "Venue address copied to clipboard!",
+                toastWish: "Thank you for your warm wishes! ❤️",
+                toastMusicOn: "Festive Shehnai melody playing 🎶",
+                toastMusicOff: "Background music muted"
+            }
+        };
+
+        let currentLang = 'bn';
+
+        function toBengaliDigits(str) {
+            const bn = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+            return String(str).replace(/\d/g, d => bn[d]);
+        }
+
+        // ===================================================================
+        // RENDER ENTIRE UI FROM WEDDING_CONFIG
+        // ===================================================================
+        function renderPageContent() {
+            const t = UI_TEXT[currentLang];
+            const cfg = WEDDING_CONFIG;
+
+            // Hero & Header
+            document.getElementById('ui-bismillah-sub').textContent = t.bismillahSub;
+            document.getElementById('ui-hero-badge').textContent = t.heroBadge;
+            document.getElementById('ui-groom-short').textContent = cfg.couple.groomShort[currentLang];
+            document.getElementById('ui-and').textContent = t.and;
+            document.getElementById('ui-bride-short').textContent = cfg.couple.brideShort[currentLang];
+            document.getElementById('ui-hero-date').textContent = cfg.mainWedding.dateDisplay[currentLang];
+            document.getElementById('ui-hero-venue').textContent = cfg.mainWedding.venueName[currentLang];
+            document.getElementById('ui-hero-host').textContent = cfg.couple.familiesHost[currentLang];
+            document.getElementById('ui-scroll-btn').textContent = t.scrollBtn;
+
+            // Invitation Note
+            document.getElementById('ui-cordial-title').textContent = t.cordialTitle;
+            document.getElementById('ui-invitation-body').innerHTML = t.invitationBody;
+            document.getElementById('ui-regards').textContent = t.regards;
+            document.getElementById('ui-families-sig').textContent = cfg.couple.familiesSignature[currentLang];
+
+            // Bride & Groom Cards
+            document.getElementById('ui-uniting-badge').textContent = t.unitingBadge;
+            document.getElementById('ui-two-homes-title').textContent = t.twoHomesTitle;
+            document.getElementById('ui-groom-label').textContent = t.groomLabel;
+            document.getElementById('ui-groom-full').textContent = cfg.couple.groomFull[currentLang];
+            document.getElementById('ui-groom-parents').textContent = cfg.couple.groomParents[currentLang];
+            document.getElementById('ui-bride-label').textContent = t.brideLabel;
+            document.getElementById('ui-bride-full').textContent = cfg.couple.brideFull[currentLang];
+            document.getElementById('ui-bride-parents').textContent = cfg.couple.brideParents[currentLang];
+
+            // Countdown Labels & Synced Date Display
+            document.getElementById('ui-cd-badge').textContent = t.cdBadge;
+            document.getElementById('ui-cd-title').textContent = t.cdTitle;
+            document.getElementById('ui-cd-exact-date').textContent = `${cfg.mainWedding.dateDisplay[currentLang]} • ${cfg.events[1].timeText[currentLang]}`;
+            document.getElementById('ui-lbl-days').textContent = t.lblDays;
+            document.getElementById('ui-lbl-hours').textContent = t.lblHours;
+            document.getElementById('ui-lbl-mins').textContent = t.lblMins;
+            document.getElementById('ui-lbl-secs').textContent = t.lblSecs;
+
+            // Events Section
+            document.getElementById('ui-events-sub').textContent = t.eventsSub;
+            document.getElementById('ui-events-title').textContent = t.eventsTitle;
+            renderEventsList();
+
+            // Interactive Venue Map Section
+            document.getElementById('ui-venue-badge').textContent = t.venueBadge;
+            document.getElementById('ui-main-venue-name').textContent = cfg.mainWedding.venueName[currentLang];
+            document.getElementById('ui-main-venue-address').textContent = cfg.mainWedding.fullAddress[currentLang];
+            document.getElementById('ui-map-pin-label').textContent = t.mapPinLabel;
+            document.getElementById('ui-btn-open-map').textContent = t.btnOpenMap;
+            document.getElementById('ui-btn-copy-addr').textContent = t.btnCopyAddr;
+            document.getElementById('ui-map-preview-link').href = cfg.mainWedding.googleMapsUrl;
+            document.getElementById('ui-main-map-btn').href = cfg.mainWedding.googleMapsUrl;
+
+            // RSVP & Finale
+            document.getElementById('ui-rsvp-title').textContent = t.rsvpTitle;
+            document.getElementById('ui-rsvp-sub').textContent = t.rsvpSub;
+            document.getElementById('ui-rsvp-submit').textContent = t.rsvpSubmit;
+            document.getElementById('ui-final-heading').textContent = t.finalHeading;
+            document.getElementById('ui-final-body').textContent = t.finalBody;
+            document.getElementById('ui-final-couple').textContent = `${cfg.couple.groomShort[currentLang]} ${t.and} ${cfg.couple.brideShort[currentLang]}`;
+            document.getElementById('ui-final-date-tag').textContent = cfg.mainWedding.shortDateTag[currentLang];
+            document.getElementById('ui-footer-host').textContent = cfg.couple.familiesHost[currentLang];
+
+            updateCountdown();
+        }
+
+        function renderEventsList() {
+            const container = document.getElementById('events-list');
+            const t = UI_TEXT[currentLang];
+
+            const themeMap = {
+                amber: {
+                    border: "border-marigoldGold",
+                    headerBg: "bg-gradient-to-r from-amber-600 to-marigoldGold text-slate-900",
+                    titleColor: "text-amber-800",
+                    calBtn: "bg-marigoldGold hover:bg-amber-500 text-slate-900"
+                },
+                maroon: {
+                    border: "border-royalMaroon",
+                    headerBg: "bg-gradient-to-r from-royalMaroon to-festiveCrimson text-turmericYellow",
+                    titleColor: "text-royalMaroon",
+                    calBtn: "bg-royalMaroon hover:bg-rose-900 text-white"
+                },
+                emerald: {
+                    border: "border-emeraldDeep",
+                    headerBg: "bg-gradient-to-r from-emeraldDeep to-turquoiseAccent text-white",
+                    titleColor: "text-emeraldDeep",
+                    calBtn: "bg-emeraldDeep hover:bg-emerald-900 text-white"
+                }
+            };
+
+            container.innerHTML = WEDDING_CONFIG.events.map(ev => {
+                const th = themeMap[ev.themeColor] || themeMap.maroon;
+                return `
+                    <div class="bg-white rounded-2xl border-3 ${th.border} shadow-xl overflow-hidden">
+                        <div class="${th.headerBg} px-4 py-2.5 flex items-center justify-between font-bold text-xs">
+                            <span>${ev.subtitle[currentLang]}</span>
+                            <span class="text-lg">${ev.icon}</span>
+                        </div>
+                        <div class="p-5 text-center">
+                            <h3 class="font-galada text-3xl sm:text-4xl ${th.titleColor}">${ev.title[currentLang]}</h3>
+                            <div class="my-3.5 py-3 border-y border-dashed border-amber-200 space-y-1">
+                                <p class="text-base font-extrabold text-slate-800">${ev.dateText[currentLang]}</p>
+                                <p class="text-sm font-bold text-royalMaroon">${ev.timeText[currentLang]}</p>
+                                <p class="text-sm font-bold text-slate-700 pt-1">${ev.venue[currentLang]}</p>
+                                <p class="text-xs text-slate-500">${ev.address[currentLang]}</p>
+                            </div>
+                            <div class="grid grid-cols-2 gap-2.5 mt-3">
+                                <a href="${ev.mapUrl}" target="_blank" rel="noopener" class="flex items-center justify-center gap-1.5 bg-slate-100 hover:bg-slate-200 text-slate-900 border border-slate-300 font-bold text-xs py-2.5 px-3 rounded-xl transition">
+                                    <span>📍</span>
+                                    <span>${t.btnMap}</span>
+                                </a>
+                                <button onclick="downloadEventICS('${ev.id}')" class="flex items-center justify-center gap-1.5 ${th.calBtn} font-bold text-xs py-2.5 px-3 rounded-xl shadow-sm transition">
+                                    <span>📅</span>
+                                    <span>${t.btnCal}</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang;
+
+            const btnEn = document.getElementById('btn-en');
+            const btnBn = document.getElementById('btn-bn');
+            if (lang === 'bn') {
+                btnBn.className = "px-3.5 py-1 rounded-full text-xs font-bold transition-all duration-300 bg-royalMaroon text-white shadow-sm";
+                btnEn.className = "px-3.5 py-1 rounded-full text-xs font-bold tracking-wider transition-all duration-300 text-slate-600 hover:text-slate-900";
+            } else {
+                btnEn.className = "px-3.5 py-1 rounded-full text-xs font-bold tracking-wider transition-all duration-300 bg-royalMaroon text-white shadow-sm";
+                btnBn.className = "px-3.5 py-1 rounded-full text-xs font-bold transition-all duration-300 text-slate-600 hover:text-slate-900";
+            }
+
+            renderPageContent();
+        }
+
+        // ===================================================================
+        // LIVE COUNTDOWN ENGINE (Synced to WEDDING_CONFIG.countdownTargetISO)
+        // ===================================================================
+        function updateCountdown() {
+            const targetTime = new Date(WEDDING_CONFIG.countdownTargetISO).getTime();
+            const now = Date.now();
+            const diff = targetTime - now;
+
+            const liveBanner = document.getElementById('cd-live-status');
+            if (diff <= 0) {
+                document.getElementById('cd-days').textContent = currentLang === 'bn' ? '০০' : '00';
+                document.getElementById('cd-hours').textContent = currentLang === 'bn' ? '০০' : '00';
+                document.getElementById('cd-mins').textContent = currentLang === 'bn' ? '০০' : '00';
+                document.getElementById('cd-secs').textContent = currentLang === 'bn' ? '০০' : '00';
+                liveBanner.textContent = UI_TEXT[currentLang].eventArrived;
+                liveBanner.classList.remove('hidden');
+                return;
+            }
+
+            liveBanner.classList.add('hidden');
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            const fmt = (n) => {
+                const s = String(n).padStart(2, '0');
+                return currentLang === 'bn' ? toBengaliDigits(s) : s;
+            };
+
+            document.getElementById('cd-days').textContent = fmt(days);
+            document.getElementById('cd-hours').textContent = fmt(hours);
+            document.getElementById('cd-mins').textContent = fmt(minutes);
+            document.getElementById('cd-secs').textContent = fmt(seconds);
+        }
+
+        // ===================================================================
+        // DYNAMIC CALENDAR (.ICS) GENERATOR FROM WEDDING_CONFIG
+        // ===================================================================
+        function downloadEventICS(eventId) {
+            const ev = WEDDING_CONFIG.events.find(e => e.id === eventId);
+            if (!ev) return;
+
+            const coupleStr = `${WEDDING_CONFIG.couple.groomShort.en} & ${WEDDING_CONFIG.couple.brideShort.en}`;
+            const summary = `${coupleStr} - ${ev.title.en} (${ev.title.bn})`;
+            const location = `${ev.venue.en}, ${ev.address.en}`;
+
+            const ics = [
+                "BEGIN:VCALENDAR",
+                "VERSION:2.0",
+                "PRODID:-//RoyalBengaliWedding//Invitation//EN",
+                "BEGIN:VEVENT",
+                `SUMMARY:${summary}`,
+                `DTSTART;TZID=Asia/Dhaka:${ev.icsStart}`,
+                `DTEND;TZID=Asia/Dhaka:${ev.icsEnd}`,
+                `LOCATION:${location}`,
+                `DESCRIPTION:${ev.subtitle.en} - ${WEDDING_CONFIG.couple.familiesHost.en}`,
+                "END:VEVENT",
+                "END:VCALENDAR"
+            ].join("\r\n");
+
+            const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
+            const a = document.createElement("a");
+            a.href = URL.createObjectURL(blob);
+            a.download = `${WEDDING_CONFIG.couple.groomShort.en}-${WEDDING_CONFIG.couple.brideShort.en}-${ev.id}.ics`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+
+            showToast(UI_TEXT[currentLang].toastCal);
+        }
+
+        // ===================================================================
+        // COPY VENUE ADDRESS (Iframe & Mobile Safe)
+        // ===================================================================
+        function copyVenueAddress() {
+            const textToCopy = `${WEDDING_CONFIG.mainWedding.venueName[currentLang]}, ${WEDDING_CONFIG.mainWedding.fullAddress[currentLang]}`;
+            const tempInput = document.createElement("textarea");
+            tempInput.value = textToCopy;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            showToast(UI_TEXT[currentLang].toastCopy);
+        }
+
+        // ===================================================================
+        // SCROLL-LINKED WEDDING CAR & PALKI ANIMATION
+        // ===================================================================
+        function animateRoadVehicles() {
+            const roads = document.querySelectorAll('.wedding-road');
+            const winH = window.innerHeight;
+
+            roads.forEach(road => {
+                const rect = road.getBoundingClientRect();
+                if (rect.top < winH && rect.bottom > 0) {
+                    const progress = (winH - rect.top) / (winH + rect.height);
+                    const vehicle = road.querySelector('.car-vehicle');
+                    if (vehicle) {
+                        const dir = vehicle.getAttribute('data-dir');
+                        const maxTravel = Math.max(60, road.offsetWidth - 180);
+                        const xPos = progress * maxTravel;
+                        vehicle.style.transform = dir === 'right' ? `translateX(${xPos}px)` : `translateX(${-xPos}px)`;
+                    }
+                }
+            });
+        }
+
+        // ===================================================================
+        // RSVP & BLESSINGS INTERACTIVE WALL (Local Storage)
+        // ===================================================================
+        const defaultWishes = [
+            { name: "তানভীর আহমেদ", status: "✅", msg: "নবদম্পতির জন্য অনেক অনেক দোয়া করবো ভাবছিলাম কিন্তু রোস্তে লবণ কম ছিল" },
+            { name: "Nusrat Jahan", status: "✅", msg: "english not understand plz go to tut tut" }
+        ];
+
+        function loadWishes() {
+            const saved = JSON.parse(localStorage.getItem("royal_wedding_wishes") || "null") || defaultWishes;
+            const wall = document.getElementById("wishes-wall");
+            wall.innerHTML = saved.map(w => `
+                <div class="bg-amber-50/90 border border-amber-200 rounded-xl p-3 text-left">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold text-royalMaroon">${w.status} ${w.name}</span>
+                    </div>
+                    <p class="text-xs text-slate-700 mt-1">${w.msg}</p>
+                </div>
+            `).join('');
+        }
+
+        function submitWish(e) {
+            e.preventDefault();
+            const nameEl = document.getElementById("wish-name");
+            const msgEl = document.getElementById("wish-message");
+            const attEl = document.getElementById("wish-attending");
+
+            const saved = JSON.parse(localStorage.getItem("বালের বিয়ে এই বিয়ে সম্ভব না আর সিয়াম কখনও আমাদের খাওয়াবেও না হুদাই বানালাম কেউ দোয়া করবেন না") || "null") || [...defaultWishes];
+            saved.unshift({
+                name: nameEl.value.trim(),
+                status: attEl.value === "yes" ? "✅" : "🤲",
+                msg: msgEl.value.trim()
+            });
+            localStorage.setItem("বালের বিয়ে এই বিয়ে সম্ভব না আর সিয়াম কখনও আমাদের খাওয়াবেও না হুদাই বানালাম কেউ দোয়া করবেন না", JSON.stringify(saved));
+
+            nameEl.value = "";
+            msgEl.value = "";
+            loadWishes();
+            showToast(UI_TEXT[currentLang].toastWish);
+        }
+
+        // ===================================================================
+        // FLOATING MARIGOLD & ROSE PETALS GENERATOR
+        // ===================================================================
+        function spawnPetals() {
+            const container = document.getElementById("petals-container");
+            const colors = ["#F59E0B", "#C81D3B", "#FBBF24", "#E11D48"];
+            for (let i = 0; i < 12; i++) {
+                const petal = document.createElement("div");
+                petal.className = "petal";
+                petal.style.left = `${Math.random() * 100}vw`;
+                petal.style.width = `${8 + Math.random() * 7}px`;
+                petal.style.height = `${8 + Math.random() * 7}px`;
+                petal.style.backgroundColor = colors[i % colors.length];
+                petal.style.borderRadius = "60% 0 60% 0";
+                petal.style.animationDuration = `${8 + Math.random() * 8}s`;
+                petal.style.animationDelay = `${Math.random() * 6}s`;
+                container.appendChild(petal);
+            }
+        }
+
+        // ===================================================================
+        // TOAST NOTIFICATION & SYNTHESIZED WEDDING MELODY
+        // ===================================================================
+        let toastTimer;
+        function showToast(msg) {
+            const box = document.getElementById('toast-box');
+            document.getElementById('toast-message').textContent = msg;
+            box.classList.remove('opacity-0', 'pointer-events-none');
+            box.classList.add('opacity-100');
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => {
+                box.classList.remove('opacity-100');
+                box.classList.add('opacity-0', 'pointer-events-none');
+            }, 3000);
+        }
+
+        let audioCtx = null;
+        let isPlaying = false;
+        let melodyTimer = null;
+        const notes = [261.63, 293.66, 329.63, 392.00, 440.00, 523.25, 440.00, 392.00, 329.63, 293.66, 261.63];
+        let noteIdx = 0;
+
+        function playNote() {
+            if (!isPlaying || !audioCtx) return;
+            const now = audioCtx.currentTime;
+            const freq = notes[noteIdx++ % notes.length];
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.type = 'triangle';
+            osc.frequency.setValueAtTime(freq, now);
+            gain.gain.setValueAtTime(0.001, now);
+            gain.gain.exponentialRampToValueAtTime(0.07, now + 0.08);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + 0.55);
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.start(now);
+            osc.stop(now + 0.6);
+        }
+
+        function toggleMusic() {
+            const iconMuted = document.getElementById('icon-muted');
+            const iconPlaying = document.getElementById('icon-playing');
+            if (!isPlaying) {
+                if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                if (audioCtx.state === 'suspended') audioCtx.resume();
+                isPlaying = true;
+                iconMuted.classList.add('hidden');
+                iconPlaying.classList.remove('hidden');
+                playNote();
+                melodyTimer = setInterval(playNote, 620);
+                showToast(UI_TEXT[currentLang].toastMusicOn);
+            } else {
+                isPlaying = false;
+                clearInterval(melodyTimer);
+                iconPlaying.classList.add('hidden');
+                iconMuted.classList.remove('hidden');
+                showToast(UI_TEXT[currentLang].toastMusicOff);
+            }
+        }
+
+        // Initialize on load
+        window.addEventListener('scroll', animateRoadVehicles, { passive: true });
+        window.addEventListener('resize', animateRoadVehicles);
+        renderPageContent();
+        loadWishes();
+        spawnPetals();
+        animateRoadVehicles();
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>
